@@ -1,4 +1,4 @@
-# Postgres + Adminer
+# Postgres + Pgadmin4
 
 ![demo](demo.png)
 
@@ -15,7 +15,7 @@ cd Postgres
 ```
 docker-compose up
 ```
-E pronto, você já pode testar o seu banco pelo Adminer [clicando aqui](http://localhost)
+E pronto, você já pode testar o seu banco pelo Pgadmin [clicando aqui](http://localhost)
 
 ## Extras
 Para remover os containers dê o comando
@@ -25,6 +25,6 @@ docker-compose down
 
 # Observações
 - A tag `restart` está ativa (ou seja, irá iniciar junto com o sistema ao iniciar)
-- Definir `postgresql` no atributo `server` na página Adminer (em programas locais do computador poderá utilizar o localhost:5432)
+- Definir `postgresql` no atributo `server` na página Pgadmin4 (em programas locais poderá utilizar por meio do endereço localhost:5432)
 - Uma pasta chamada `postgres-data` será criada na raiz desse projeto para que não perca suas modificações feitas
 - As Configurações estão no `docker-compose.yml` caso queiram alterar e lembrem-se de remover os container após as modificações
