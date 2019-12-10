@@ -7,7 +7,7 @@
 ```
 docker-compose up
 ```
-Now the Postgres will be installed next to PAdmin, see PgAdmin by [clicking here](http://localhost).
+Now the Postgres will now be installed with PgAdmin, see PgAdmin by [clicking here](http://localhost).
 
 ## Remove services
 ```

@@ -14,7 +14,7 @@ There are 4 services in this example:
 docker-compose up
 ```
 
-Now your Kong will be installed next to Konga (GUI), see Konga by [clicking here](http://localhost:1337).
+Now the Kong will be installed installed with Konga (GUI), see Konga by [clicking here](http://localhost:1337).
 
 After done setting upstream endpoints and running dashboard, you should be able to get list of upstream endpoints via this endpoint:
 
