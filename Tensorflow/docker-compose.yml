@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:nightly-py3-jupyter
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: postgres
+    ports:
+      - 8888:8888
+      # TensoBoard
+      - 6006:6006
+    volumes:
+      - ./:/tf/notebooks
