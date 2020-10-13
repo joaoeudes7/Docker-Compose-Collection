@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mycroft:
+    image: mycroftai/docker-mycroft
+    devices:
+      - "/dev/snd:/dev/snd"
+    environment:
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+    ports:
+      - 8181:8181
+    volumes:
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ./.mycroft:/root/.mycroft
